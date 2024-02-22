@@ -1,0 +1,65 @@
+.loader-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  z-index: 999;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  height: 100%;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #FFF;
+  border-bottom-color: #4caf50;
+  border-radius: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dots {
+  font-size: 32px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: -20px;
+}
+
+.dot {
+  transition: font-size 0.5s ease;
+  margin: 0 4px;
+  /* margin-top: 20px; */
+}
+
+.dot2 {
+  font-size: 12px;
+}
+
+.dot3 {
+  font-size: 12px;
+}

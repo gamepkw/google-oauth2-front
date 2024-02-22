@@ -1,0 +1,21 @@
+.poem {
+  width: 100%;
+  height: 500px;
+}
+
+.poem {
+  overflow: scroll;
+  scrollbar-color: rgb(175, 175, 175) rgb(255, 255, 255);
+  scrollbar-width: thin;
+}
+
+.poem-history {
+  width: 310px;
+  height: 450px;
+}
+
+.poem-history {
+  overflow: scroll;
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
+}

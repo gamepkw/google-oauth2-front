@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.page-container {
+  width: 500px;
+  height: 700px;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.page-container h3 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.page-container form {
+  transition: transform 0.6s ease-in-out;
+}
+
+.page-container input[type="text"],
+.page-container input[type="number"],
+.page-container input[type="password"] {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.page-container .username-container {
+  position: relative;
+  margin-bottom: 24px;
+  padding: 0 24px;
+}
+
+.page-container .username-container input[type="text"] {
+  margin-bottom: 0px;
+  height: 64px;
+  font-size: 16px;
+}
+
+.page-container .username-container.error input[type="text"] {
+  outline-color: red;
+}
+
+.page-container .username-container input[type="number"] {
+  margin-bottom: 0px;
+}
+
+.page-container .username-container .username-error {
+  color: #d30909;
+  font-size: 12px;
+  top: 40px;
+  left: 0;
+}
+
+.page-container .password-container {
+  position: relative;
+  margin-bottom: 24px;
+  padding: 0 24px;
+}
+
+.page-container .password-container input[type="password"] {
+  margin-top: 8px;
+  height: 64px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.page-container .password-container.error input[type="password"] {
+  outline-color: red;
+}
+
+.page-container .password-container .password-error {
+  color: #d30909;
+  font-size: 12px;
+  top: 40px;
+  left: 0;
+  margin-bottom: 8px;
+}
+
+.page-container .toggle-form {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #666;
+  cursor: pointer;
+}
+
+.page-container .forgot-password {
+  position: absolute;
+  bottom: -36px;
+  right: 10px;
+  font-size: 12px;
+  text-decoration: underline;
+  color: #666;
+  cursor: pointer;
+}
+
+.page-container .password-container .reveal-password-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.mm-number-container {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mm-number-input-container {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.mm-number-input-item {
+  width: 40px;
+  height: 40px;
+  margin: 10px 5px;
+
+}
+
+.mm-number-input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  /* Add margin to create space between input group and error message */
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  margin-top: -20px
+}
+
+.inform-message {
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  text-align: right;
+  margin-top: -4px;
+  margin-bottom: 8px;
+  margin-left: auto;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  height: 90%;
+  margin-left: -12px;
+}
+
+.readonly-textbox {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px; 
+  background-color: #f5f5f5;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: calc(80% - 100px);
+}
+
+.page-container .login-user {
+  float: right;
+  font-size: 0.6em;
+  margin-top: -1em;
+}
+
+.page-container .group-logout {
+  padding-right: 2em;
+  width: 30%;
+  height: 10%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container .logo-image {
+  padding-left: 1em;
+  /* display: block; */
+}
+
+.page-container .header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}

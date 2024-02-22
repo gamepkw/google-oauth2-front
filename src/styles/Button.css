@@ -1,0 +1,70 @@
+body {
+  font: normal normal 20px/1.2 'Helvetica Neue', Arial, sans-serif;
+}
+
+p {
+  padding: 8px;
+}
+
+.back-button {
+  background: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 1;
+  width: 40px;
+  cursor: pointer;
+
+  /* padding: 20px 30px 15px 25px;
+    text-decoration: none; */
+  transition: all 0.2s;
+}
+
+.back-button:hover {
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.page-container button {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 16px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-container button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.page-container button:disabled:hover {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.page-container button:hover {
+  background-color: #25802a;
+}
+
+.page-container button.logout-button {
+  margin-top: 0.5em;
+  width: 75%;
+  padding: 0.5em;
+  background-color: #ae1f1f;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  float: right;
+}
